@@ -1,5 +1,6 @@
 const a = Math.random() * 15;
 Math.trunc(a);
+const b = Math.trunc(a));
 console.log(Math.trunc(a));
 
 function MyFunction1() {

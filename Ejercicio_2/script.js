@@ -1,14 +1,16 @@
-function MyFunction1() {
-    let array = document.getElementById("texto").value;    
-    let vocales = 0;                   
-    for (let i = 0; i < 10000; i++) 
+function CuentaVocales() {
+    let texto = document.getElementById("texto").value;    
+    let cont = 0;         
+    let vocales = "AaÄäÁáEeËëÉéIiÍíÏïOoÖöÓóUuÜüÚú";          
+    for (let i = 0; i < texto.length; i++) 
     {        
-        console.log("Hola")
-        if (array[i] == 'a' || array[i] == 'e' || array[i] == 'i' || array[i] == 'o' || array[i] == 'u')
+        for(let j=0;j<vocales.length;j++)
         {
-
-            vocales++;
-        }        
+            if(vocales[j]==texto[i])
+            {
+                cont++;
+            }
+        }                                 
     }
-    window.alert("Tiene " + vocales + " vocales.");
+    window.alert("Tiene " + cont + " vocales.");
 }

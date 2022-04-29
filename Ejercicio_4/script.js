@@ -1,12 +1,12 @@
-function MyFunction1() {
-    var a = document.getElementById("texto").value;
-    var b = parseInt(document.getElementById("numero").value);
-    var total;
-    total = a;
-    for (let i = 0; i < b - 1; i++) {
+function RepiteCadena() {
+    let texto = document.getElementById("texto").value;
+    let repite = parseInt(document.getElementById("numero").value);
+    let nuevaCadena;
+    nuevaCadena = texto + " ";
+    for (let i = 0; i < repite - 1; i++) {
         
-        total += a;
-        console.log(total);
+        nuevaCadena += texto + " ";
+        console.log(nuevaCadena);
     }
-    window.alert("Aqui tienes: " + total);
+    window.alert("Aqui tienes: " + nuevaCadena);
 }

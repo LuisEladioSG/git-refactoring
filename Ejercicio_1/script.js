@@ -1,4 +1,4 @@
-function MyFunction1() {
+function Suma2num() {
     let a;
     let b;
     let c;
